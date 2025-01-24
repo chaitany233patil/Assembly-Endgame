@@ -11,7 +11,7 @@ Assembly: Endgame is a fun, interactive word-guessing game built using React. Th
 
 ## Screenshot
 
-![Game Screenshot](./screenshot.png)
+![Game Screenshot](./public/screenshot.png)
 
 ## How to Play
 
@@ -59,15 +59,5 @@ The game is already deployed and accessible at: [Your Deployed URL](#)
 - Add a leaderboard to display top players.
 - Introduce difficulty levels for advanced users.
 - Include more programming languages and words.
-
-## License
-
-This project is licensed under the [MIT License](./LICENSE).
-
-## Acknowledgements
-
-Special thanks to the programming community for inspiration and support.
-
----
 
 Feel free to fork, contribute, or share feedback!
