@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  background: #282726;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f9f4da;
+}
+
+header .description {
+  max-width: 400px;
+  align-items: center;
+  line-height: 23px;
+  color: #8e8e8e;
+}
+
+.game-status {
+  margin-top: 20px;
+  width: 400px;
+  height: 45px;
+  padding: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.game-status.won {
+  background: #10a95b;
+}
+
+section.game-status.lost {
+  background: #ba2a2a;
+}
+
+section.game-status.wrong {
+  background: #7a5ea7;
+  border: 1px dashed #323232;
+}
+
+.game-status > h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #f9f4da;
+}
+
+.game-status > p {
+  color: #f9f4da;
+}
+
+.languages-chips {
+  margin-top: 30px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.languages-chips > .chip {
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 500;
+  position: relative;
+}
+
+span.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.8rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.word {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.word > span {
+  background: #323232;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #f9f4da;
+  color: #f9f4da;
+  font-weight: 600;
+}
+
+#finish {
+  color: #ba2a2a;
+}
+
+.keyBoard {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 500px;
+}
+
+@media (min-width: 300) {
+  section.keyBoard {
+    max-width: 400px;
+  }
+}
+
+.keyBoard > .key {
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  width: 40px;
+  background: #fcba29;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.keyBoard > .correct {
+  background: #10a95b;
+}
+
+.keyBoard > .wrong {
+  background: #ec5d49;
+}
+
+.new-game-btn {
+  font-size: 20px;
+  background-color: #11b5e5;
+  color: black;
+  padding: 8px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
